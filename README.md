@@ -1,4 +1,36 @@
-# Backend Engineering Homework  
+# Notes for Holistiplan Team
+I enjoyed working on this assignment and look forward to discussing it with you!
+
+### Running the Project
+To start the project, use the following command:
+
+```bash
+python manage.py runserver
+```
+
+### Authentication Token
+To receive an authentication token, use the following endpoint:
+
+```bash
+POST /login/ HTTP/1.1
+Host: your-api-domain.com
+Content-Type: application/json
+
+{
+    "username": "your-username",
+    "password": "your-password"
+}
+```
+
+### User List View
+If you are a staff user and need to include deleted users in the list view, use the following endpoint:
+
+```bash
+GET /users/?show_inactive_users=true
+```
+
+
+# Backend Engineering Homework
   
 Thank you for spending time with us in the previous interviews.  The next step in the process is a homework assignment designed to help us understand how you handle actual coding problems. We would like you to do this assignment, taking a maximum of 4 hours so we don’t eat up too much of your time.  Make sure to understand your solution as the next step in the process is deep diving on it.   
   
