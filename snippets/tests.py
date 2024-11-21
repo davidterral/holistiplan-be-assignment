@@ -1,9 +1,8 @@
 from django.test import TestCase
-from rest_framework.test import APIClient, APIRequestFactory
+from rest_framework.test import APIClient
 from rest_framework import status
 from django.contrib.auth.models import User
 from snippets.models import Snippet, AuditRecord
-from snippets.serializers import SnippetSerializer, AuditRecordSerializer
 
 
 class UserManagementTest(TestCase):
